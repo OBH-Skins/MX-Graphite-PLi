@@ -1439,14 +1439,26 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 <widget name="channel" position="0,0" size="0,0" font="Regular;26"/>
 <widget name="number" position="0,12" size="380,45" halign="center" font="Regular;42"/>
 </screen>
-<screen name="ParentalControlChangePin" position="30,120" size="820,850" title="Change pin code">
-<widget name="config" position="20,20" size="780,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_Graphite/menu/bg820x40.png" selectionPixmap="MX_Graphite/menu/button820x40.png" transparent="1"/>
+<screen name="PinInputPopup" position="center,center" size="600,200" title="Change pin code">
+<widget name="service" position="20,20" size="560,40" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
+<widget name="tries" position="20,60" size="560,40" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
+<widget name="input" position="20,120" size="560,60" font="Regular;50" halign="center" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
+</screen>
+<screen name="PinInput" position="center,center" size="600,200" title="Change pin code">
+<widget name="service" position="20,20" size="560,40" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
+<widget name="tries" position="20,60" size="560,40" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
+<widget name="input" position="20,120" size="560,60" font="Regular;50" halign="center" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
 </screen>
 <screen name="ParentalControlEditor" position="30,120" size="820,850" title="Parental control services Editor">
 <widget name="servicelist" position="20,20" size="780,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_Graphite/menu/bg820x40.png" selectionPixmap="MX_Graphite/menu/button820x40.png" transparent="1"/>
 </screen>
 <screen name="ParentalControlSetup" position="30,120" size="820,850" title="Parental control setup">
 <widget name="config" position="20,20" size="780,800" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_Graphite/menu/bg820x40.png" selectionPixmap="MX_Graphite/menu/button820x40.png" transparent="1"/>
+<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
+<ePixmap pixmap="MX_Graphite/buttons/red48x48.png" position="150,780" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_Graphite/buttons/green48x48.png" position="480,780" size="48,48" alphatest="blend"/>
+<widget source="key_red" render="Label" position="210,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="key_green" render="Label" position="540,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 </screen>
 <screen name="PluginBrowser" position="30,120" size="820,850" title="Plugin browser">
 <widget name="list" position="20,20" size="780,675" scrollbarMode="showOnDemand" itemHeight="75" enableWrapAround="1" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_Graphite/menu/bg820x75.png" selectionPixmap="MX_Graphite/menu/sel820x75.png" transparent="1"/>
